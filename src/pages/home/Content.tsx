@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import Station from './Station'
 import Time from './Time'
 import Options from './Options'
@@ -7,11 +7,23 @@ import './Content.css'
 
 
 function Content(): JSX.Element {
+
+  const [stations, setStations] = useState({location: '北京', destination: '上海'})
+
+  const exchangeStations = useCallback(() => {
+    setStations(prevState => {
+      return {
+        location: prevState.destination,
+        destination: prevState.location
+      }
+    })
+  }, [])
+  
   return (
     <div>
       <div className='content-bg'></div>
       <div className='content-panel'>
-        <Station />
+        <Station stations={stations} exchange={exchangeStations}/>
         <Time />
         <Options />
         <Button />

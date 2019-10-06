@@ -1,11 +1,16 @@
 import React from 'react'
 
-function Station() {
+interface StationProps {
+  stations: { location: string, destination: string }
+  exchange: () => void
+}
+
+function Station({stations: { location, destination }, exchange}: StationProps) {
   return (
     <div className='content-station'>
-      <div className="station department">北京</div>
-      <div className='station-exchange iconfont'>&#xe665;</div>
-      <div className="station destination">上海</div>
+      <div className="station department">{location}</div>
+      <div className='station-exchange iconfont' onClick={exchange}>&#xe665;</div>
+      <div className="station destination">{destination}</div>
     </div>
   )
 }
