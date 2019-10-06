@@ -1,12 +1,15 @@
 import React, { lazy, Suspense } from 'react'
 import Loading from '../../common/Loading'
 
+const Header = lazy(() => import('../../common/Header'))
+const Calendar = lazy(() => import('./Calendar'))
+
 function DatePicker() {
   return (
     <Suspense fallback={Loading}>
-      <div className='datepicker-wrapper'>
+        <Header title='火车票'/>
+        <Calendar />
         DatePicker
-      </div>
     </Suspense>
   )
 }

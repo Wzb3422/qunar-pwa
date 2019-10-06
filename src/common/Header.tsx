@@ -2,15 +2,15 @@ import React from 'react'
 import './Header.css'
 import '../assets/css/iconfont.css'
 
-interface HeaderProps {
-  title: string
-  backTo: () => void
-}
+function Header({ title }: { title: string }): JSX.Element {
 
-function Header({ title, backTo }: HeaderProps): JSX.Element {
+  const goBack = () => {
+    window.history.back()
+  }
+
   return (
     <div className='header-wrapper'>
-      <div className='header-right-arrow iconfont'>&#xe622;</div>
+      <div className='header-right-arrow iconfont' onClick={goBack}>&#xe622;</div>
       <div className='header-title'>{title}</div>
     </div>
   )

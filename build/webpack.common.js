@@ -47,7 +47,7 @@ module.exports = {
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {
         messages: [`You application is running here http://localhost:${devServerPort}`],
-        notes: ['三天之内祝你心想事成']
+        notes: ['天气热了，记得多喝热水~']
       }
     }),
   ],
