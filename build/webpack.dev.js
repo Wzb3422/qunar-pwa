@@ -11,6 +11,7 @@ module.exports = merge(commonConfig, {
     contentBase: path.resolve(__dirname, '../dist'),
     port: devServerPort,
     hot: true,
-    quiet: true
+    quiet: true,
+    historyApiFallback: true // fallback
   }
 })
