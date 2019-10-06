@@ -1,0 +1,26 @@
+.entries-wrapper {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.entry-item {
+  height: 90px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry-item img {
+  height: 44px;
+  width: 44px;
+  margin-bottom: 18px;
+}
+
+.entry-item-text {
+  font-size: 13px;
+}

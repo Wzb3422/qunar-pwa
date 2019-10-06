@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {Suspense, lazy} from 'react'
+import Loading from './common/Loading'
+
+const AppRouter = lazy(() => import('./router'))
 
 const App: () => JSX.Element = () => {
   return (
-    <div>Hello world</div>
+    <Suspense fallback={<Loading />}>
+      <AppRouter />
+    </Suspense>
   )
 }
 

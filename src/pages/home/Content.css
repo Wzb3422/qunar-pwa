@@ -1,0 +1,97 @@
+.content-bg {
+  background: url(//s.qunarzz.com/train_touch/pictures/top_title.png) no-repeat;
+  background-size: contain;
+  padding-bottom: 34%;
+}
+
+.content-panel {
+  padding: 8px 0 16px 0;
+  width: 360px;
+  height: 240px;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.14);
+  margin: -77 auto 0 auto;
+  background: #fff;
+  color: #333;
+}
+
+.content-station {
+  height: 66px;
+  box-sizing: border-box;
+  margin: 0 22px;
+  width: 316px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 1px solid #eee;
+}
+
+.station {
+  font-size: 26px;
+  letter-spacing: 8px;
+}
+
+.station-exchange {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.content-time {
+  height: 60px;
+  box-sizing: border-box;
+  margin: 0 22px;
+  width: 314px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.time-button {
+  display: flex;
+  align-items: baseline;
+}
+
+.time-date {
+  font-size: 20px;
+}
+
+.time-week {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #9e9e9e;
+}
+
+.content-options {
+  width: 314px;
+  margin: 0 22px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-option {
+  display: flex;
+  align-items: center;
+}
+
+.content-button {
+  width: 314px;
+  height: 52px;
+  margin: 0 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button {
+  width: 300px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: rgb(255, 131, 0);
+  color: #fff;
+  letter-spacing: 10px;
+  font-size: 18px;
+}
