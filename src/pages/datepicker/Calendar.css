@@ -18,3 +18,13 @@
 .week-bar div:nth-child(1 + 7) {
   color: red;
 }
+
+.month-bar {
+  width: 100%;
+  height: 33px;
+  color: #212121;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: center;
+}

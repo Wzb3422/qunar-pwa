@@ -1,9 +1,11 @@
 import React from 'react'
+import MonthBar from './MonthBar'
 import './Calendar.css'
 
 function Calendar(): JSX.Element {
   return (
     <div className='calendar-wrapper'>
+
       <div className='week-bar'>
         <div>日</div>
         <div>一</div>
@@ -13,6 +15,9 @@ function Calendar(): JSX.Element {
         <div>五</div>
         <div>六</div>
       </div>
+
+      <MonthBar year={2019} month={9} />
+      div
     </div>
   )
 }
