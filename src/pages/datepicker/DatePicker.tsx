@@ -8,8 +8,8 @@ function DatePicker() {
 
   return (
     <Suspense fallback={<Loading />}>
-        <Header title='火车票'/>
-        <Calendar />
+      <Header title='火车票'/>
+      <Calendar />
     </Suspense>
   )
 }

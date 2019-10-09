@@ -1,0 +1,6 @@
+.date-blocks {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

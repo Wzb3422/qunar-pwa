@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react'
+import { RouteComponentProps } from 'react-router-dom'
 import Station from './Station'
 import Time from './Time'
 import Options from './Options'
 import Button from './Button'
 import './Content.css'
-
 
 function Content(): JSX.Element {
 
@@ -19,7 +19,7 @@ function Content(): JSX.Element {
     })
   }, [])
 
-  
+
   return (
     <div>
       <div className='content-bg'></div>
